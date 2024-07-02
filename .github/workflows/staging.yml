@@ -1,0 +1,16 @@
+name: Pipeline Tests
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Automation Tests
+        uses: actions/checkout@v4
+
+      - name: Cypress run-1
+        uses: cypress-io/github-action@v6
+        with:
+          command: npm run cy:login
