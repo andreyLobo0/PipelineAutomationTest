@@ -15,4 +15,4 @@ jobs:
       - name: Cypress run-1
         uses: cypress-io/github-action@v6
         with:
-          command: npm run cy:login
+          command: npm run cy:execution
