@@ -10,24 +10,6 @@ jobs:
       - name: Run actions/checkout
         uses: actions/checkout@v4
 
-      - name: Run actions/setup-node
-        run: echo "Run actions/setup-node"
-
-      - name: Install Dependencies
-        run: echo "Install Dependencies"
-
-      - name: Typecheck + Lint + Test Coverage
-        run: echo "Typecheck + Lint + Test Coverage"
-
-      - name: Configure AWS Credentils
-        run: echo "Configure AWS Credentils"
-
-      - name: Migrate TypeORM
-        run: echo "Migrate TypeORM"
-
-      - name: Servelss Deploy
-        run: echo "Servelss Deploy"
-
       - name: Run Automation Tests API
         uses: cypress-io/github-action@v6
         with:
