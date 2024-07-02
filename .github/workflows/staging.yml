@@ -7,8 +7,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Run Automation Tests
+      - name: Run actions/checkout
         uses: actions/checkout@v4
+      - name: Run actions/checkout
+        run: echo "Teste de Steps"
 
       - name: Cypress run-1
         uses: cypress-io/github-action@v6
