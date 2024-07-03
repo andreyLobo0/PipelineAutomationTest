@@ -2,9 +2,8 @@ name: Pipeline Tests
 on:
   workflow_dispatch:
 
-jobs:
-  run-tests:
-    runs-on: ubuntu-latest
+runs:
+    using: 'Test'
     steps:
       - name: Run actions/checkout
         uses: actions/checkout@v4
