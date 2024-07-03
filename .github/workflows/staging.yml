@@ -1,8 +1,8 @@
 name: Pipeline Tests
 on:
-  workflow_dispatch:
+  workflow_call:
 
-  push: [workflow_call]
+  workflow_dispatch:
 
 jobs:
   run-tests:
