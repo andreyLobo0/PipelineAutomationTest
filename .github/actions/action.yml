@@ -3,7 +3,7 @@ name: Main Action
 on:
   workflow_call:
 
-jobs:
+runs:
   run:
     runs-on: ubuntu-latest
     steps:
