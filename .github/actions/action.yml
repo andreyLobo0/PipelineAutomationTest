@@ -9,6 +9,6 @@ runs:
 
       - name: Run Automation Tests API/E2E
         uses: cypress-io/github-action@v6
-        working-directory: andreyLobo0/PipelineAutomationTest
+        working-directory: andreyLobo0/PipelineAutomationTest/
         with:
           command: npm run cy:execution
