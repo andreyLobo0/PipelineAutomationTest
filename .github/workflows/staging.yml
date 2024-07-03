@@ -12,5 +12,5 @@ jobs:
         uses: actions/checkout@v4
       - name: Run Automation Tests API/E2E
         uses: cypress-io/github-action@v6
-      - name: Login
-      - run: npm run cy:login
+        with:
+          command: npm run cy:execution
