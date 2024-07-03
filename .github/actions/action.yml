@@ -1,11 +1,15 @@
-name: Pipeline Tests
-description: 'Test'
+name: Main Action
 
-runs:
-    using: "composite"
+on: workflow_call
+
+jobs:
+  main-job:
+    runs-on: ubuntu-latest
+
     steps:
-
+      - name: Checkout code
       - name: Run Automation Tests API/E2E
         uses: cypress-io/github-action@v6
-        with:
-          command: npm run cy:execution
+
+      - name: Login
+      - run: npm run cy:execution
