@@ -4,8 +4,6 @@ description: 'Test'
 runs:
     using: "composite"
     steps:
-      - name: Run actions/checkout
-        uses: actions/checkout@v4
 
       - name: Run Automation Tests API/E2E
         uses: cypress-io/github-action@v6
