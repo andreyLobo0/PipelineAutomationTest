@@ -1,6 +1,5 @@
 name: Pipeline Tests
-on:
-  workflow_dispatch:
+
 
 runs:
     using: 'Test'
