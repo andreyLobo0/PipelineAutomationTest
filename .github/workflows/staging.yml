@@ -13,6 +13,5 @@ jobs:
 
       - name: Run Automation Tests API/E2E
         uses: cypress-io/github-action@v6
-
-      - name: test
-      - run: npm run cy:execution
+        with:
+          command: npm run cy:execution
