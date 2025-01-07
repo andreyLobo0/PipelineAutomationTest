@@ -1,15 +1,18 @@
-name: Pipeline Tests
+name: Main Action
 
 on:
-  workflow_call:
-
+  repository_dispatch:
+    types:
+      - e2e-tests-triggered
 jobs:
   run:
     runs-on: ubuntu-latest
     steps:
       - name: Run actions/checkout
         uses: actions/checkout@v4
+
       - name: Run Automation Tests API/E2E
         uses: cypress-io/github-action@v6
-        with:
-          command: npm run cy:execution
+
+      - name: test
+      - run: npm run cy:execution
