@@ -1,8 +1,9 @@
 name: Main Action
 
 on:
-  workflow_call:
-
+  repository_dispatch:
+    types:
+      - e2e-tests-triggered
 runs:
   run:
     runs-on: ubuntu-latest
