@@ -1,4 +1,4 @@
-name: Main Action
+name: Automation E2E
 
 on:
   repository_dispatch:
